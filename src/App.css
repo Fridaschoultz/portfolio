@@ -1,33 +1,122 @@
-.App {
-  text-align: center;
+html{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
+
+.section1, .section2, .section3, .section4{
+  box-sizing: border-box;
   min-height: 100vh;
+  max-height: 100vh;
+  padding: 0vh 0vh 0vh 0vh;
+  position: relative;
+  transform-style: inherit;
+}
+
+/* .section1, .section1:before, .section2, .section2:before, .section3, .section3:before{
+  background: 50% 50%;
+} */
+
+.section1 *, .section2 *, .section3 *, .section4 * {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+
+.section1::before{
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0vh;
+  display: block;
+  background-image: url(./images/pic11.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.section2::before{
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 120vh;
+  display: block;
+  background: rgb(198,120,52);
+  background: linear-gradient(90deg, rgba(198,120,52,1) 0%, rgba(189,85,109,1) 51%, rgba(177,40,181,1) 100%);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.section3::before{
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 240vh;
+  display: block;
+  background: rgb(198,120,52);
+  background: linear-gradient(90deg, rgba(198,120,52,1) 0%, rgba(189,85,109,1) 51%, rgba(177,40,181,1) 100%);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.section4::before{
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 340vh;
+  display: block;
+  background-image: url(./images/pic5.png);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+  
+}
+
+.section1_content{
+  padding-top: 30vh;
+}
+
+.section2_content{
+  padding-top: 130vh;
+}
+
+.section3_content{
+  padding-top: 275vh;
+}
+
+.section4_content{
+  padding-top: 370vh;
+}
+
+.footer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }

@@ -1,0 +1,28 @@
+.container_project_main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+.container_project{
+    width: 20%;
+    height: 300px;
+    margin: 2%;
+    background-color: beige;
+}
+
+.cont_header_text{
+    z-index: 1;
+    width: 100%;
+    letter-spacing: 0.0em;
+}
+
+
+
+/* RESPONSIVE */
+/* @media screen and (max-width: 360px) {
+    .container_project{
+      height: 150px;
+    }
+  } */
