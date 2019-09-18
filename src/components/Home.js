@@ -7,11 +7,11 @@ class Home extends React.Component{
             <div className="container_home">
                 <div className="container_left">
                         <div>
-                            <h1 className="cont_header_text_left_top">ROBAR</h1>
-                            <h1 className="cont_header_text_left_bottom">ZANGANA</h1>
+                            <h1 className="cont_header_text_left_top">FRIDA</h1>
+                            <h1 className="cont_header_text_left_bottom">SCHOULTZ</h1>
                             <p className="line_top"></p>
                             <p className="line_bottom"></p>
-                            <p className="header_text">computer engineering student</p>
+                            <p className="header_text">Frontend developer student</p>
                         </div>
                 </div>
             
