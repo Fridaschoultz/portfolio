@@ -1,47 +1,43 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Aboutme from './components/Aboutme'
 import Project from './components/Project'
 import Home from './components/Home'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollToTop from 'react-scroll-up'
 
-class App extends React.Component{
-  render() {
+const App = () => {
     return (
       <div>
-        <div id="sec1" className="section1">
-        <Header/>
+        <div>
+          <Navbar/>
+          </div>
+        <div className="section1">
+          <div id="sec1"></div>
           <div className="section1_content">
             <Home/>
           </div>
         </div>
-        
-        <div id="sec2" className="section2">
+
+        <div className="section2">
           <div className="section2_content">
+          <div id="sec2"></div>
             <Project/>
           </div>
         </div>
 
-        <div id="sec3" className="section3">
+        <div className="section3">
           <div className="section3_content">
+            <div id="sec3"></div>
             <Aboutme/>
           </div>
         </div>
 
-        <div id="sec4" className="section4">
-          <div className="section4_content">
-            <Contact/>
-          </div>
-        </div>
-        <div className="footer">
+        {/* <div className="footer">
           <Footer/>
-        </div>
+        </div> */}
       </div>
     );
-  }
 }
-
 export default App;
-

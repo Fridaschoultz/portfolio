@@ -1,3 +1,9 @@
-.nav_bar{
+/* .nav_bar{
     opacity: 1;
+} */
+
+.navbar_fixed_position{
+    position: fixed; 
+    z-index: 3;
+    width: 100%;
 }

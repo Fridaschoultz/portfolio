@@ -1,17 +1,173 @@
-.container{
+.container_aboutme{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    margin-top: 3%;
+    padding-top: 2%;
+    perspective: 1px;
 }
 .container_look{
     width: 100%;
     margin-top: 2%;
-    background-color: beige;
+    /* background-color: beige;*/
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+} 
+
+.container_first_image{
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 .cont_header_text{
     z-index: 1;
     width: 100%;
+    margin-bottom: 5%;
 }
+
+.right_side_a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    z-index: 1;
+    width: 50%;
+    margin-top: 10vh;
+    margin-right: 20vh;
+}
+
+.left_side_a{
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  font-size: 65pt;
+  margin-bottom: 40vh;
+}
+
+
+
+.button_aboutme{
+    margin-top: 25vh;
+    border-radius: 14px;
+    z-index: 2;
+}
+
+.headline_leftside_s{
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.line_top_a{
+    width: 12%;
+    display: block;
+    position: absolute;
+    margin-top: 19vh;
+    margin-bottom: 0.5em;
+    margin-right: 47vh;
+    height: 4px;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: white
+  }
+  
+  .line_bottom_a{
+    width: 12%;
+    display: block;
+    position: absolute;
+    margin-top: 15vh;
+    margin-bottom: 0.5em;
+    margin-right: 0%;
+    height: 4px;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: white
+  }
+
+
+
+  /* Show me div */
+.container_aboutmepage_notshow{
+    z-index:3;
+    left: 0;
+    position: fixed;
+    /* margin-top: 2%; */
+    /* top: 200vh; */
+    right: 0;
+    padding-bottom: 2%;
+    background: rgb(176,112,143);
+    background: linear-gradient(90deg, rgba(176,112,143,1) 58%, rgba(114,64,100,1) 100%);
+}
+
+.container_show{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 65pt;
+    margin-bottom: 40vh;
+}
+.headline_show{
+    margin-left: 50vh;
+    font-weight: bold;
+    color: white;
+    font-size: 65pt;
+    height: 0vh;
+    margin-top: 14vh;
+}
+.button_aboutme_show{
+    margin-left: 5vh;
+    margin-top: 5vh;
+    font-size: 20pt;
+}
+.container_show_text{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20pt;
+}
+
+.container_show_text_above{
+    width: 50%;
+    height: 50%;
+    margin-left: 120px;
+    font-size: 15pt;
+}
+
+.container_show_text_below{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15pt;
+    margin-top: 8%;
+}
+
+.container_show_text_below_left{
+    width: 30%;
+}
+
+.container_show_text_below_middle{
+    width: 30%;
+}
+
+.container_show_text_below_right{
+    width: 30%;
+}
+
+.container_show_img{
+    width: 50%;
+    height: 50%;
+    /* margin-right: 30px; */
+}
+ 
+img{
+    width: 300px;
+    height: 300px;
+} 
+

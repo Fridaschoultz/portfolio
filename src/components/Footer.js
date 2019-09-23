@@ -8,9 +8,8 @@ class Footer extends React.Component{
                 {/* <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 <i class="far fa-envelope fa-lg fa-2x"></i> */}
                 <p className="line_top_footer"></p>
-                <p className="copyright">© 2018 Copyright</p>
+                <p className="copyright">© 2018 Copyright Frida Schoultz</p>
                 <p className="line_bottom_footer"></p>
-                
             </div>
         )
     }

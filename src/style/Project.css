@@ -4,8 +4,11 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    margin-top: 5%;
+    padding-top: 2%;
 }
 .container_project{
+    z-index: 1;
     width: 20%;
     height: 300px;
     margin: 2%;
@@ -20,9 +23,99 @@
 
 
 
+.container_project_main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+.container_project_pro{
+  z-index: 1;
+  position: relative;
+  width: 20%;
+  height: 300px;
+  margin: 5%;
+  background-color: beige;
+}
+
+.cont_header_text{
+  z-index: 1;
+  width: 100%;
+  letter-spacing: 0.0em;
+}
+.right_side{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  width: 65%;
+  margin-top: 10vh;
+}
+
+.left_side{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+text-align: left;
+width: 35%;
+font-size: 65pt;
+}
+
+.headline_leftside{
+font-weight: bold;
+color: white;
+margin-left: 5vh;
+}
+
+.line_top_t{
+width: 12%;
+display: block;
+position: absolute;
+margin-top: 19vh;
+margin-bottom: 0.5em;
+margin-left: 7vh;
+height: 4px;
+border-style: inset;
+border-width: 2px;
+border-radius: 15px;
+border-color: white
+}
+
+.line_bottom_t{
+width: 12%;
+display: block;
+position: absolute;
+margin-top: 15vh;
+margin-bottom: 0.5em;
+margin-left: 0%;
+height: 4px;
+border-style: inset;
+border-width: 2px;
+border-radius: 15px;
+border-color: white
+}
+
+.card {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
 /* RESPONSIVE */
 /* @media screen and (max-width: 360px) {
-    .container_project{
-      height: 150px;
-    }
-  } */
+  .container_project{
+    height: 150px;
+  }
+} */

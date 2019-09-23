@@ -1,0 +1,18 @@
+.chart_container{
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 500px; */
+
+}
+
+.doughnut_chart1{
+    width: 45%;
+    height: 45%;
+    margin-top: 100px;
+} 
+
+.doughnut_chart2{
+    width: 45%;
+    height: 45%;
+    margin-top: 100px;
+}
