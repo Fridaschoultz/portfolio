@@ -68,7 +68,7 @@ class Aboutme extends Component {
                                 <br></br>
                                 <p> I love when a product or a services can make a story telling design, both from a user friendly
                                     perspective and from a personal standpoint. We need good design as we are making technology a more bigger part of our lifes and therefore we need to make sure we attract
-                                    people with something thats feels real. I belive this will be at the core of tomorrows technology.</p>
+                                    people with something that feels real. I belive this will be at the core of tomorrows technology.</p>
                             </div>
 
                         

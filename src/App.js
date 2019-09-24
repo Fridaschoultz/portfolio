@@ -5,7 +5,6 @@ import Aboutme from './components/Aboutme'
 import Project from './components/Project'
 import Home from './components/Home'
 import Footer from './components/Footer'
-import ScrollToTop from 'react-scroll-up'
 
 const App = () => {
     return (
@@ -33,10 +32,6 @@ const App = () => {
             <Aboutme/>
           </div>
         </div>
-
-        {/* <div className="footer">
-          <Footer/>
-        </div> */}
       </div>
     );
 }
