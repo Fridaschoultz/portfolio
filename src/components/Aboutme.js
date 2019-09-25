@@ -29,7 +29,7 @@ const Aboutme = () => {
                     </div>
                     <div className="container_show_text">
                         <div className="container_show_text_above"> 
-                        <h2>Hey there, i'm Frida Schoultz. Nice to meet ya!</h2>
+                        <h1>Hey there, i'm Frida Schoultz. Nice to meet ya!</h1>
                         <br></br>
                         <p>Born in Huddinge, Stockholm 1989. Currently studying Frontend development at Nackademin in Stockholm. This fall/winter i will be doing my internship at
                             Cybercom in stockholm as a part of my syllabus. I will be part of a team called Innovation Zone where we are going to be working with SmartLog, which is a

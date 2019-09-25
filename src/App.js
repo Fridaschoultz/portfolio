@@ -28,7 +28,7 @@ const App = () => {
 
         <div className="section3">
           <div className="section3_content">
-            <div id="sec3"></div>
+            <div id="sec3"></div> 
             <Aboutme/>
           </div>
         </div>
