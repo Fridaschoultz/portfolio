@@ -1,5 +1,4 @@
 import React from "react";
-// import { ScrollTo, ScrollArea } from "react-scroll-to";
 import '../style/Navbar.css';
 
 const Navbar = () => {

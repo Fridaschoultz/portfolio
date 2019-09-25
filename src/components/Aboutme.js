@@ -4,29 +4,27 @@ import { useSpring, animated as a } from "react-spring";
 import Chart from './Chart'
 import images from '../images/profil.jpg';
 
-class Aboutme extends Component {
+const Aboutme = () => {
 
-    constructor(){
-        super();
-        this.state={
-            showMe:false
-        }
+    const operationShow = () =>{
+        document.getElementById("front_cont_show").style.zIndex = "0";
+        var x = document.getElementById("back_cont");
+        x.style.display = "block";
     }
 
-    operation(){
-        this.setState({
-            showMe: !this.state.showMe
-        })
+    const operationHide = () =>{
+        document.getElementById("front_cont_show").style.zIndex = "3";
+        var x = document.getElementById("back_cont");
+        x.style.display = "none";
     }
-    render(){
+    
         return (            
             <div className="container_aboutme">
-                {
-                    this.state.showMe?
+                
 
-                <div className="container_aboutmepage_notshow">
+                <div id='back_cont' className="container_aboutmepage_notshow">
                     <div className="container_show">
-                        <a.button onClick={()=>this.operation()}  type="button" class="btn btn-secondary btn-lg button_aboutme_show">BACK</a.button>
+                        <a.button onClick={operationHide}  type="button" class="btn btn-secondary btn-lg button_aboutme_show">BACK</a.button>
                         <p className="headline_show">ABOUT ME.</p>  
                     </div>
                     <div className="container_show_text">
@@ -34,7 +32,7 @@ class Aboutme extends Component {
                         <h2>Hey there, i'm Frida Schoultz. Nice to meet ya!</h2>
                         <br></br>
                         <p>Born in Huddinge, Stockholm 1989. Currently studying Frontend development at Nackademin in Stockholm. This fall/winter i will be doing my internship at
-                            Cybercom in stockholm as a part of my syllabus. I will be part of a team called Innovation Zone where we are going to be working with SmartLog, wich is a
+                            Cybercom in stockholm as a part of my syllabus. I will be part of a team called Innovation Zone where we are going to be working with SmartLog, which is a
                             project developed for using machine learning in order to predict how a system will preform. 
                             
                         </p> 
@@ -60,13 +58,13 @@ class Aboutme extends Component {
                                 <br></br>
                                 <p>The interest in technology and frontend development emerged when I realized all the opportunities that exist and how much you can do. 
                                     For me, the driving force is rooted in a curiosity for the dynamics of Frontend and technology as a whole. To think that a little bit of code and 
-                                    story telling design actually can make a big difference in people's lifes is pretty darn cool.
+                                    story-telling design actually can make a big difference in people's lifes, is pretty darn cool.
                                     The technical development is constantly taking great strides forward and I want to be a part of this journey and see where it takes us.</p>
                             </div>
                             <div className="container_show_text_below_right">
                                 <h5>STORY</h5>
                                 <br></br>
-                                <p> I love when a product or a services can make a story telling design, both from a user friendly
+                                <p> I love when a product or a services can make a story telling-design, both from a user friendly
                                     perspective and from a personal standpoint. We need good design as we are making technology a more bigger part of our lifes and therefore we need to make sure we attract
                                     people with something that feels real. I belive this will be at the core of tomorrows technology.</p>
                             </div>
@@ -80,14 +78,13 @@ class Aboutme extends Component {
                             </div> 
                             
                 </div>
-                :null
-                 }
-           
+                 
+                <div id='front_cont_show' className='container_aboutmepage_show'>
                 <div className="left_side_a">
                     <p className="headline_leftside_s">ABOUT ME.</p>
                     <p className="line_top_t"></p>
                     <p className="line_bottom_t"></p>
-                    <a.button onClick={()=>this.operation()}  type="button" class="btn btn-secondary btn-lg button_aboutme">SHOW MORE</a.button>      
+                    <a.button onClick={operationShow}  type="button" class="btn btn-secondary btn-lg button_aboutme">SHOW MORE</a.button>      
                 </div>
 
                 <div className="right_side_a">
@@ -98,9 +95,13 @@ class Aboutme extends Component {
                             <img src={images} alt="Profil" />
                             </div>
 
-                        <p>Don't be a stranger. I'd love to talk. Click the <mark>SHOW MORE</mark> button and check out more about me. </p>
+                        <p>Don't be a stranger. I'd love to talk. Click the <mark>SHOW MORE</mark> button and check out more about me or contact me on the information below. </p>
+                        <br></br>
+                        <p>Contact me at <mark>fridaschoultz@hotmail.com</mark></p>
+                        <p>LinkedIn</p><a className="icon_linkedIn" target="_blank" href="https://www.linkedin.com/in/frida-schoultz-683162172/"><i class="fa fa-linkedin fa-lg"></i></a>
 
                     </div>
+                </div>
                 </div>
              
 
@@ -110,6 +111,6 @@ class Aboutme extends Component {
             </div>
             
         )
-        }
+        
 }
 export default Aboutme;

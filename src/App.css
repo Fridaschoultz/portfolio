@@ -6,13 +6,13 @@ html{
   overflow: hidden;
   width: 100%;
 }
-.fff{
+/* .fff{
   margin-top: 60vh;
   background-color: black;
   display: flex;
   z-index: 1;
   justify-content: center;
-}
+} */
 
 body{
   margin: 0;
@@ -69,6 +69,10 @@ body{
   /*transform: translateZ(-1px) scale(2); */
   z-index: -1;
   min-height: 100vh
+}
+
+.section2{
+  z-index:3;
 }
 
 .section3::before{
