@@ -40,6 +40,18 @@
     margin-left:100px;
 }
 
+.button_project_behind{
+  margin-top: 25vh;
+  border-radius: 14px;
+  z-index: 2;
+  height: 55px;
+  font-size:15pt;
+  padding: 5px;
+  text-align: center;
+  margin:5px;
+  margin-left:10px;
+}
+
 .p_left{
   width: 60%;
   padding-left:30px;
@@ -59,7 +71,7 @@
   font-weight: bold;
   color: white;
   font-size: 65pt;
-  margin-left: -100px;
+  margin-left: -60px;
   margin-top: 60px;
 }
 
@@ -71,27 +83,35 @@
     background-color: beige;
 }
 
-.cont_header_text{
-    z-index: 1;
-    width: 100%;
-    letter-spacing: 0.0em;
+.container_header_pro{
+  padding-top: 10%;
+  margin-right: 12%;
+  font-size: 25pt;
 }
 
-.cont_header_text{
+.cont_p_text{
   z-index: 1;
-  width: 100%;
-  font-size: 15px;
+  width: 80%;
+  font-size: 15pt;
   letter-spacing: 0.0em; 
   color: black;
-  /* color: #FFF; */
-  position: relative;
+  margin-bottom: 5%;
+  margin-left: 6%;
+}
+
+.cont_header_text_link{
+  color: white;
+  margin-right: 20%;
+  font-size: 15pt;
+  margin-left: 7%;
+ 
 }
 
 .right_side{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;  
-  width: 65%;
+  width: 70%;
   margin-top: 10vh;
 }
 
@@ -100,7 +120,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 text-align: left;
-width: 35%;
+width: 30%;
 font-size: 65pt;
 }
 
@@ -116,7 +136,49 @@ margin-left: 5vh;
   margin-left: 5vh;
   font-size: 30pt;
   }
-  
+
+  .project_first_img{
+    width: 70%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .project_img{
+    width: 80%;
+    height: 70%;
+    margin-right: 20%;
+  }
+
+  .project_img_1{
+    width: 70%;
+    height: 60%;
+    margin-right: 20%;
+    margin-top: 13%;
+    padding-bottom: 1%;
+  }
+
+  .project_img_2{
+    width: 70%;
+    height: 60%;
+    margin-right: 20%;
+    padding-bottom: 1%;
+    margin-top: 13%;
+  }
+
+  .project_img_3{
+    width: 80%;
+    height: 60%;
+    margin-right: 20%;
+    padding-bottom: 1%;
+    margin-top: 13%;
+  }
+
+  .project_img_4{
+    width: 80%;
+    height: 70%;
+    margin-right: 20%;
+  }
 
 .line_top_t{
 width: 12%;
@@ -150,9 +212,7 @@ border-color: white
   z-index:4;
   left: 0;
   position: fixed;
-  min-height: 200vh; /*Här ä'ndrar du höjden på den gömda sidan*/
-  /* margin-top: 2%; */
-  /* top: 200vh; */
+  min-height: 200vh; /*Ändrar höjden på den gömda sidan i project*/
   right: 0;
   display:none;
   padding-bottom: 2%;
@@ -174,27 +234,192 @@ border-color: white
   background: linear-gradient(90deg, rgba(176,112,143,1) 58%, rgba(114,64,100,1) 100%);
 }
 
-/* .card {
-  width: 45ch;
-  height: 45ch;
-  background: grey;
-  border-radius: 5px;
-  background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.5s;
-  will-change: transform;
-  border: 15px solid white;
+
+/* RESPONSIVE */ 
+
+@media screen and (max-width: 1800px) {
+  .headline_leftside_header{
+    font-size:45pt;
+    margin-top: 5%;
+    margin-left: 100%;
+  }
+
+  .button_project{
+    margin-top: 25%;
+    height: 100px;
+    width: 100%;
+  }
 }
 
-.card:hover {
-  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-} */
+@media screen and (max-width: 700px) {
+  .headline_leftside_header{
+    font-size:25pt;
+    margin-top: 20%;
+    margin-left: 50%;
+ 
+     }
 
-/* RESPONSIVE */
-/* @media screen and (max-width: 360px) {
-  .container_project{
-    height: 150px;
+     .left_side{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: left;
+      width: 30%;
+      font-size: 10pt;
+      }
+
+     .line_top_t{
+        display:none;
+      }
+      
+      .line_bottom_t{
+        display:none;
+      }
+
+      .button_project{
+        margin-top: 100vh;
+        margin-bottom: 100vh;
+        border-radius: 15px;
+        z-index: 2;
+        height: 55px;
+        font-size:10pt;
+        padding: 5px;
+        text-align: center;
+        margin:5px;
+        margin-left:10px;
+    }
+
+    .project_first_img{
+      width: 50%;
+      height: 30%;
+      margin-top: 60%;
+      margin-left: 5%;
+    }
+
+    .headline_leftside_text{
+      font-weight: bold;
+      color: white;
+      margin-left: 5vh;
+      margin-top: -60%;
+      font-size: 20pt;
+      }
+
+      .top_headline_pro_tex_big{
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        font-size: 30pt;
+        margin-left: -100px;
+        margin-top: 60px;
+      }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .headline_leftside_header{
+   font-size:15pt;
+   margin-top: 10%;
+
+    }
+
+    .line_top_t{
+      display:none;
+      }
+      
+      .line_bottom_t{
+      display:none;
+      }
+
+      .button_project{
+        margin-top: 100%;
+        margin-bottom: 100vh;
+        border-radius: 10px;
+        z-index: 2;
+        height: 55px;
+        font-size:10pt;
+        padding: 5px;
+        text-align: center;
+        margin:5px;
+        margin-left:10px;
+    }
+
+    .button_project_behind{
+      font-size:10pt;
+    }
+
+    .container_first_image{
+      display:none;
   }
-} */
+
+  .right_side{
+    display: none;
+  }
+
+  .headline_leftside_text{
+    font-weight: bold;
+    color: white;
+    margin-left: 30vh;
+    margin-bottom: 30vh;
+    font-size: 15pt;
+    width: 50%;
+    height: 50%;
+    } 
+    
+    .top_headline_pro_tex_big{
+      font-size:15pt;
+      margin-top: 10%;
+      width: 100%;
+      font-weight: bold;
+      color: white;
+    }
+
+    .button_project{
+      margin-top: 100%;
+      margin-bottom: 100vh;
+      border-radius: 10px;
+      z-index: 2;
+      height: 55px;
+      font-size:10pt;
+      padding: 5px;
+      text-align: center;
+      margin:5px;
+      margin-left:10px;
+  }
+
+    .container_header_pro{
+      padding-top: 10%;
+      margin-right: 12%;
+      margin-left: 32%;
+      font-size: 15pt;
+    }
+
+    .cont_header_text_link{
+      color: white;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      margin-right: 20%;
+      font-size: 8pt;
+      margin-left: 32%;
+     
+    }
+
+    .cont_p_text{
+      z-index: 1;
+      width: 100%;
+      text-align: center;
+      font-size: 10pt;
+      letter-spacing: 0.0em; 
+      color: black;
+      margin-bottom: 5%;
+      margin-left: 20%;
+    }
+
+    .p_right{
+      display:none;
+    }
+
+
+}
+
+

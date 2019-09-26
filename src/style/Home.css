@@ -25,9 +25,8 @@
 }
 .cont_header_text_left_bottom{
     z-index: 1;
-    width: 100%;
+    width: 80%;
     font-size: 65pt;
-    margin-left: 10%;
 }
 
 .cont_header_text_right{
@@ -38,7 +37,7 @@
     font-weight: bold;
 }
 .line_top{
-    width: 12%;
+    width: 15%;
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -50,7 +49,7 @@
 }
 
 .line_bottom{
-    width: 12%;
+    width: 15%;
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;

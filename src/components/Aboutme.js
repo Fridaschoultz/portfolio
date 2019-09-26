@@ -3,6 +3,7 @@ import '../style/Aboutme.css';
 import { useSpring, animated as a } from "react-spring";
 import Chart from './Chart'
 import images from '../images/profil.jpg';
+import pic41 from '../images/pic41.jpg';
 
 const Aboutme = () => {
 
@@ -24,8 +25,8 @@ const Aboutme = () => {
 
                 <div id='back_cont' className="container_aboutmepage_notshow">
                     <div className="container_show">
-                        <a.button onClick={operationHide}  type="button" class="btn btn-secondary btn-lg button_aboutme_show">BACK</a.button>
-                        <p className="headline_show">ABOUT ME.</p>  
+                        <a.button onClick={operationHide}  type="button" class="btn btn-secondary btn-lg button_aboutme_back">BACK</a.button>
+                        <p className="headline_show_b_about">ABOUT ME.</p>  
                     </div>
                     <div className="container_show_text">
                         <div className="container_show_text_above"> 
@@ -34,13 +35,20 @@ const Aboutme = () => {
                         <p>Born in Huddinge, Stockholm 1989. Currently studying Frontend development at Nackademin in Stockholm. This fall/winter i will be doing my internship at
                             Cybercom in stockholm as a part of my syllabus. I will be part of a team called Innovation Zone where we are going to be working with SmartLog, which is a
                             project developed for using machine learning in order to predict how a system will preform. 
+                            <br></br>
+                            <br></br>
+                            <p>
+                                On my free time i like to hang out with friends and watch movies. Me and my friends have, for the past three and half years, been organizing book clubs,
+                                and i know it might sound pretty geeky but i love to read. Me and my family own a summer cottage out in the stockholm archipelago and i spend a lot of my 
+                                time there in the summers and in early spring and fall with my old cat Findus.
+                            </p>
                             
                         </p> 
                         <br></br>
 
                         </div>
                             <div className="container_show_img">
-                            <img src={images} alt="Profil" />
+                            <img src={images} alt="profil" />
                             </div>
                     </div>
 
@@ -73,7 +81,7 @@ const Aboutme = () => {
 
                     </div>
                     
-                            <div>
+                            <div className="chart_div">
                                  <Chart/> 
                             </div> 
                             
@@ -81,25 +89,25 @@ const Aboutme = () => {
                  
                 <div id='front_cont_show' className='container_aboutmepage_show'>
                 <div className="left_side_a">
-                    <p className="headline_leftside_s">ABOUT ME.</p>
-                    <p className="line_top_t"></p>
-                    <p className="line_bottom_t"></p>
-                    <a.button onClick={operationShow}  type="button" class="btn btn-secondary btn-lg button_aboutme">SHOW MORE</a.button>      
+                    <p className="headline_leftside_aboutme">ABOUT ME.</p>
+                    <p className="line_top_aboutme"></p>
+                    <p className="line_bottom_aboutme"></p>
+                    <a.button onClick={operationShow}  type="button" class="btn btn-secondary btn-lg button_aboutme_show">SHOW MORE</a.button>      
                 </div>
 
                 <div className="right_side_a">
                     <div className="container_look">
-                        <h1 className="cont_header_text">HEY THERE, I'M FRIDA SCHOULTZ. NICE TO MEET YA!</h1>
 
-                        <div className="container_first_image">
-                            <img src={images} alt="Profil" />
-                            </div>
+                        <div>
+                              <img className="container_first_image" src={pic41} alt="Profil" /> 
+                        </div>
 
-                        <p>Don't be a stranger. I'd love to talk. Click the <mark>SHOW MORE</mark> button and check out more about me or contact me on the information below. </p>
+                        <div className='cont_text_p'> 
+                        <p>Don't be a stranger. I'd love to talk. Click the <mark className="mark_aboutme">SHOW MORE</mark> button and check out more about me or contact me on the information below. </p>
                         <br></br>
-                        <p>Contact me at <mark>fridaschoultz@hotmail.com</mark></p>
+                        <p>Contact me at <mark  className="mark_aboutme">fridaschoultz@hotmail.com</mark></p>
                         <p>LinkedIn</p><a className="icon_linkedIn" target="_blank" href="https://www.linkedin.com/in/frida-schoultz-683162172/"><i class="fa fa-linkedin fa-lg"></i></a>
-
+                        </div>
                     </div>
                 </div>
                 </div>

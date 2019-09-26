@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../style/Chart.css';
-import { HorizontalBar, Pie, Doughnut } from "react-chartjs-2"
+import { Doughnut } from "react-chartjs-2"
 
 
 class Chart extends Component {
@@ -19,11 +19,11 @@ class Chart extends Component {
               label: "Skill set",
               data: [50, // javascript
                     30, // PHP
-                    60, // mysql
-                    60, // wordpress
-                    20, // react
-                    20, // gatsby
-                    20], // jekyll
+                    30, // mysql
+                    50, // wordpress
+                    30, // react
+                    30, // gatsby
+                    30], // jekyll
               backgroundColor: [
                 "#2D253A", // javascript
                 "#FFFFFF", // php
@@ -40,8 +40,7 @@ class Chart extends Component {
             display: true,
             text: "Skill set (%)",
             fontSize: 30,
-            fontColor:'white',
-            // fontFamily: 'Oswald',
+            fontColor:'white'
           },
         }}
       />
@@ -56,7 +55,7 @@ class Chart extends Component {
             {
             label: "skill set",
             data: [30, // pHOTOSHOP
-                   40, // ADOBE XD
+                   50, // ADOBE XD
                    20, // SASS
                    25, // illustrator
                    70, // gITHUB

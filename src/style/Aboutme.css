@@ -7,36 +7,37 @@
     margin-top: 5%;
     padding-top: 2%;
     perspective: 1px;
-}
+    
+} 
 .container_look{
-    width: 100%;
-    margin-top: 2%;
-    /* background-color: beige;*/
+     width: 100%;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15pt;
-} 
+    color: white;
+    margin-top: 2%;
+}   
 
 .container_first_image{
+    width: 80%;
+    height: 70%;
     margin-left: 2%;
-    margin-bottom: 2%;
-}
-
-.cont_header_text{
-    z-index: 1;
-    width: 100%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
-.right_side_a{
+.cont_text_p{
+    margin-bottom: 20%;
+}
+
+ .right_side_a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
     z-index: 1;
-    width: 50%;
-    margin-top: 10vh;
-    margin-right: 20vh;
-}
+    padding-bottom: 10%;
+    width: 50%; 
+} 
 
 .left_side_a{
   display: flex;
@@ -53,7 +54,18 @@
 }
 
 
-.button_aboutme{
+.button_aboutme_show{
+    margin-top: 25vh;
+    border-radius: 14px;
+    z-index: 2;
+    height: 55px;
+    font-size:20pt;
+    padding: 5px;
+    text-align: center;
+    margin:5px;
+}
+
+.button_aboutme_back{
     margin-top: 25vh;
     border-radius: 14px;
     z-index: 2;
@@ -71,6 +83,7 @@
 
 .container_aboutmepage_show{
     display:flex;
+    color: white;
     z-index:3;
     left: 0;
     position: absolute;
@@ -85,13 +98,13 @@
 
 
 
-.line_top_a{
+.line_top_aboutme{
     width: 12%;
     display: block;
     position: absolute;
     margin-top: 19vh;
     margin-bottom: 0.5em;
-    margin-right: 47vh;
+    margin-left: 3%;
     height: 4px;
     border-style: inset;
     border-width: 2px;
@@ -99,13 +112,12 @@
     border-color: white
   }
   
-  .line_bottom_a{
+  .line_bottom_aboutme{
     width: 12%;
     display: block;
     position: absolute;
     margin-top: 15vh;
     margin-bottom: 0.5em;
-    margin-right: 0%;
     height: 4px;
     border-style: inset;
     border-width: 2px;
@@ -120,12 +132,10 @@
     z-index:3;
     left: 0;
     position: fixed;
-    /* margin-top: 2%; */
-    /* top: 200vh; */
     right: 0;
     display:none;
-    padding-bottom: 2%;
-    background: rgb(176,112,143);
+    padding-bottom: 2%; 
+     background: rgb(176,112,143);
     background: linear-gradient(90deg, rgba(176,112,143,1) 58%, rgba(114,64,100,1) 100%);
 }
 
@@ -139,7 +149,7 @@
     margin-bottom: 40vh;
 }
 
-.headline_show{
+.headline_show_b_about{
     margin-left: 40px;
     font-weight: bold;
     color: white;
@@ -148,6 +158,7 @@
     margin-left:25%;
     margin-top: 10%;
 }
+
 .button_aboutme_show{
     margin-left: 5vh;
     margin-top: 5vh;
@@ -187,12 +198,144 @@
 
 .container_show_img{
     width: 50%;
-    height: 50%;
-    /* margin-right: 30px; */
+    height: 50%;  
+}
+.chart_div{
+    width: 100%;
 }
  
-img{
-    width: 300px;
-    height: 300px;
-} 
 
+@media screen and (max-width: 1500px) {
+    .headline_leftside_aboutme{
+        font-size: 60pt;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .headline_leftside_aboutme{
+        font-size: 50pt;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .headline_leftside_aboutme{
+        font-size: 50pt;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* Front */
+    .line_top_aboutme{
+        display: none;
+    }
+    .line_bottom_aboutme{
+        display: none;
+    }
+    .headline_leftside_aboutme{
+        font-size: 30pt;
+    }
+    .button_aboutme_show{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 10pt;
+    }
+    .button_aboutme_back{
+        height: 100px;
+    }
+
+    .cont_text_p{
+        width: 100%;
+        /* height: 500px; */
+        font-size: 20pt;
+    }
+    .mark_aboutme{
+        font-size: 10pt;
+    }
+    .left_side_a{
+        width: 100%;
+        margin-bottom: 0vh;
+    }
+    .right_side_a{
+        width: 100%;
+        margin-bottom: 0vh;
+    }
+    .container_aboutmepage_show{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container_first_image{
+        width: 10%;
+        height: 10%;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .container_first_image{
+        width: 80%;
+    }
+    /* Front End */
+
+    
+    /* Back */
+
+    .container_aboutmepage_notshow{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .button_aboutme_back{
+        width: 100%;
+    }
+
+    .headline_show_b_about{
+        font-size: 30pt;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+
+    .container_show_text_above{
+        width: 100%;
+        height: 50%;
+        margin-left: 0%;
+        font-size: 15pt;
+    }
+
+    .container_show_text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container_aboutmepage_notshow{ 
+        display:none;
+    }
+    
+    .container_show{
+        margin-bottom: 40%;   
+    }
+
+    .container_show_img{
+        width: 100%;
+    }
+    .container_show_text_below{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container_show_text_below_left{
+        width: 100%;
+    }
+    .container_show_text_below_middle{
+        width: 100%;
+    }
+    .container_show_text_below_right{
+        width: 100%;
+    }
+    .chart_div{
+        width: 100%;
+    }
+
+    /* Back End */
+    
+}
