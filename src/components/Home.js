@@ -37,7 +37,7 @@ const Home = () => {
                 <a.h1 className="cont_header_text_left_bottom" style={contentTop}>SCHOULTZ</a.h1>
                 <p className="line_top"></p>
                 <p className="line_bottom"></p>
-                <a.p className="header_text" style={contentBottom}>Frontend developer</a.p>
+                <a.p className="header_text" style={contentBottom}>Frontend developer looking for a new job</a.p>
             </div>
             <div className="container_right">
                     <a.h1 className="cont_header_text_right" style={contentRight}>PORTFOLIO</a.h1>
