@@ -21,7 +21,7 @@ class Chart extends Component {
                     30, // PHP
                     30, // mysql
                     50, // wordpress
-                    30, // react
+                    50, // react
                     30, // gatsby
                     30], // jekyll
               backgroundColor: [
@@ -38,7 +38,7 @@ class Chart extends Component {
         options={{
           title: {
             display: true,
-            text: "Skill set (%)",
+            //text: "Skill set (%)",
             fontSize: 30,
             fontColor:'white'
           },
@@ -58,8 +58,8 @@ class Chart extends Component {
                    50, // ADOBE XD
                    20, // SASS
                    25, // illustrator
-                   70, // gITHUB
-                   80], // HTML/CSS
+                   80, // gITHUB
+                   90], // HTML/CSS
             backgroundColor: [
                 "#2D253A", // javascript
                 "#FFFFFF", // php
@@ -73,10 +73,10 @@ class Chart extends Component {
             options={{
                 title: {
                 display: true,
-                text: "Skill set (%)",
+                //text: "Skill set (%)",
                 fontSize: 30,
                 fontColor:'white',
-                // fontFamily: 'Oswald',
+                //fontFamily: 'Oswald',
                 },
                 }}
     />

@@ -32,15 +32,17 @@ const Aboutme = () => {
                         <div className="container_show_text_above"> 
                         <h1>Hey there, i'm Frida Schoultz. Nice to meet ya!</h1>
                         <br></br>
-                        <p>Born in Huddinge, Stockholm 1989. Currently studying Frontend development at Nackademin in Stockholm. This fall/winter i will be doing my internship at
-                            Cybercom in stockholm as a part of my syllabus. I will be part of a team called Innovation Zone where we are going to be working with SmartLog, which is a
-                            project developed for using machine learning in order to predict how a system will preform. 
+                        <p> My name is Frida and i'm a junior Frontend developer and i'm currently looking for new challenges and opportunities where I can learn more and grow. 
+                            I studied at Nackademin in Stockholm and took my degree this spring. I am a happy and driven person who likes group dynamics as much as working by myself 
+                            and i definitely think you grow when you unpretentiously shares each other's knowledge and experience.
                             <br></br>
                             <br></br>
                             <p>
-                                On my free time i like to hang out with friends and watch movies. Me and my friends have, for the past three and half years, been organizing book clubs,
-                                and i know it might sound pretty geeky but i love to read. Me and my family own a summer cottage out in the stockholm archipelago and i spend a lot of my 
-                                time there in the summers and in early spring and fall with my old cat Findus.
+                                
+                                In my free time I like to hang out with friends, take walks and practice Thai boxing sometimes. 
+                                I also like to spend time out on my country place on Värmdö where nature and the archipelago are around the corner. 
+                                Film and music are also interests that make me relax and recharge my batteries, and together with some friends 
+                                I have a much appreciated book club that is in its fourth year now.
                             </p>
                             
                         </p> 
@@ -82,6 +84,7 @@ const Aboutme = () => {
                     </div>
                     
                             <div className="chart_div">
+                                <div className="skill_set_title">SKILL SET (%)</div>
                                  <Chart/> 
                             </div> 
                             
@@ -105,7 +108,7 @@ const Aboutme = () => {
                         <div className='cont_text_p'> 
                         <p>Don't be a stranger. I'd love to talk. Click the <mark className="mark_aboutme">SHOW MORE</mark> button and check out more about me or contact me on the information below. </p>
                         <br></br>
-                        <p>Contact me at <mark  className="mark_aboutme">fridaschoultz@hotmail.com</mark></p>
+                        <p>Contact me at <mark  className="mark_aboutme">fridaschoultz@gmail.com</mark></p>
                         <p>LinkedIn</p><a className="icon_linkedIn" target="_blank" href="https://www.linkedin.com/in/frida-schoultz-683162172/"><i class="fa fa-linkedin fa-lg"></i></a>
                         </div>
                     </div>

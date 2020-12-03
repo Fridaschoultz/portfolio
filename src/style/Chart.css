@@ -5,6 +5,12 @@
 
 }
 
+.skill_set_title{
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+}
+
 .doughnut_chart1{
     width: 45%;
     height: 45%;
