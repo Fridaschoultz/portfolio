@@ -32,6 +32,7 @@ class Chart extends Component {
                 "#81476D", // REact
                 "#FFFFFF", // gatsby
                 "#593656"], // jekyll
+                color: ['white', 'white', 'white', 'white', 'white', 'white', 'white'],
             },
           ],
         }}
@@ -40,8 +41,14 @@ class Chart extends Component {
             display: true,
             //text: "Skill set (%)",
             fontSize: 30,
-            fontColor:'white'
+            //fontColor:'white'
           },
+			legend: {
+				labels: {
+                // This more specific font property overrides the global property
+					fontColor: 'black'
+				}
+			}
         }}
       />
       </div>
@@ -78,6 +85,13 @@ class Chart extends Component {
                 fontColor:'white',
                 //fontFamily: 'Oswald',
                 },
+                legend: {
+                  labels: {
+                          // This more specific font property overrides the global property
+                    fontColor: 'black'
+					
+                  }
+                }
                 }}
     />
         </div>
